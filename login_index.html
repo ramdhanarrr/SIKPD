@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk | Daftar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="register.php" method="POST">
+                <h1>Buat Akun</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class='bx bxl-google' color="#FF70AB"></i></a>
+                </div>
+                <samp>atau masukkan no. telp atau email</samp>
+                <input type="email" name="email_petani" placeholder="Email" required>
+                <input type="text" name="nama_petani" placeholder="Nama Petani" required>
+                <input type="password" name="pasw_petani" placeholder="Password" required>
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="login.php" method="POST">
+                <h1>Masuk</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class='bx bxl-google'></i></a>
+                </div>
+                <samp>Atau gunakan Email/No Telp</samp>
+                <input type="email" name="email_petani" placeholder="Email/No. Telp">
+                <input type="password" name="pasw_petani" placeholder="Password">
+                <a href="#" class="fp">Lupa password?</a>
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Selamat datang, Sobat Tani!</h1>
+                    <p>Masuk ke akun pribadi anda untuk menikmati semua fitur yang ada!!</p>
+                    <button class="hidden" id="login">Masuk</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hallo, Sobat Tani!!</h1>
+                    <p>Belum punya akun? silahkan buat akun pribadi anda untuk menikmati semua fitur yang ada!!</p>
+                    <button class="hidden" id="register">Daftar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
